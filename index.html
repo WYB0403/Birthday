@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta tags and properties -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is a responsive layout template." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="coding, responsiveness, html, css" />
+    <meta name="author" content="Natalia Gonzalez" />
+    <meta property="og:title" content="Responsive Template" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="https://image.ibb.co/n6y80L/opengraph.png" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <title>Mystery</title>
+
+    <!-- Stylesheet, Google Fonts, Font Awesome and Favicon -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Domine|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="assets/images/bird.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar with logo and link -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <nav id="navbar">
+        <h1 id="logo">请根据<span id="capital">网页</span>内容，获取<span id="treasure">宝</span>藏线索。
+            &nbsp;<span id="italy">Where Is The Answer?</span></h1>
+        <h2 id="navlink"><a class="tips" onclick="GetTips()">提示</a></h2>
+    </nav>
+
+    <main>
+        <!-- Main Starter Section -->
+        <section id="starterSection">
+            <button class="cheatbtn" onclick="LayerOne()">点我召唤作弊码</button>
+            <button class="cheatbtn1" onclick="LayerTwo()">你不会真觉得有作弊码吧</button>
+            <button class="cheatbtn2" onclick="LayerThree()">好吧还真有</button>
+            <div id="cheat">
+                <h1 style="color: red" id="cheat_head"><span style="color: red; font-weight: bolder">*&nbsp;</span>作弊码输入</h1>
+                <h3>作弊码提示：<span id="square" style="color: mediumvioletred">Cap️</span>&nbsp;+&nbsp;<span style="color: mediumvioletred; text-decoration: overline mediumvioletred">"Is The Answer NO WHERE?"</span></h3>
+                <label for="scc"></label><input id="scc" class="search" placeholder="输入作弊码..."/>&nbsp;&nbsp;
+                <button id="startedButton" class="input" onclick="getData()" style="font-weight: bold">确认</button>
+            </div>
+            <h1 id="mainHeading">请看题</h1>
+        </section>
+        <p></p>
+        &nbsp;
+        &nbsp;
+        <!-- Section with Features -->
+        <div id="main">
+            <form method="post" class="survey-form">
+                <h2 class="qtitle">问题&nbsp;1</h2>
+                <div class="Q1">
+                    CSU → DTV ?
+                </div>
+<!--                <div class="form-group">-->
+<!--                    <label for="email"><span style="color: red; font-weight: bolder">*&nbsp;</span>Email&nbsp;/&nbsp;电子邮箱地址</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="email"-->
+<!--                            name="email"-->
+<!--                            placeholder="电子邮箱地址"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="visa_id"><span style="color: red; font-weight: bolder">*&nbsp;</span>Visa ID&nbsp;/&nbsp;护照号</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="visa_id"-->
+<!--                            name="visa_id"-->
+<!--                            placeholder="护照号"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="lastName"><span style="color: red; font-weight: bolder">*&nbsp;</span>Last Name&nbsp;/&nbsp;姓</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="lastName"-->
+<!--                            name="lastName"-->
+<!--                            placeholder="姓"-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="firstName"><span style="color: red; font-weight: bolder">*&nbsp;</span>First Name&nbsp;/&nbsp;名</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="firstName"-->
+<!--                            name="firstName"-->
+<!--                            placeholder="名"-->
+<!--                    />-->
+<!--                </div>-->
+            </form>
+            <p></p>
+            <form method="post" class="survey-form">
+                <h2 class="qtitle">问题2</h2>
+                <div class="Q2">
+                    123&nbsp;654&nbsp;789
+                </div>
+<!--                <div class="Q2">-->
+<!--                    <label for="birth_country">Birth Country&nbsp;/&nbsp;出生国家</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="birth_country"-->
+<!--                            name="birth_country"-->
+<!--                            placeholder="出生国家"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="birth_province">Birth Province/State&nbsp;/&nbsp;出生省/州</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="birth_province"-->
+<!--                            name="birth_province"-->
+<!--                            placeholder="出生省/洲"-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="birth_city">Birth City&nbsp;/&nbsp;出生城市</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="birth_city"-->
+<!--                            name="birth_city"-->
+<!--                            placeholder="出生城市"-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="birth_dis">Birth district(county)&nbsp;/&nbsp;出生区县</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="birth_dis"-->
+<!--                            name="birth_dis"-->
+<!--                            placeholder="出生区县"-->
+<!--                    />-->
+<!--                </div>-->
+            </form>
+            <p></p>
+            <form method="post" class="survey-form">
+                <h2 class="qtitle">问题4</h2>
+                <div class="Q4">
+                    这道题怎么解啊？
+                </div>
+<!--                <div class="form-group">-->
+<!--                    <label for="driver">Drivers’ license number&nbsp;/&nbsp;驾照号码</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="driver"-->
+<!--                            name="driver"-->
+<!--                            placeholder="驾照号码"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+            </form>
+            <p></p>
+            <form method="post" class="survey-form">
+                <h2 class="qtitle">5题问</h2>
+                <div class="Q5">
+                    W <span style="color: mediumvioletred">x</span> M <br>
+                </div>
+<!--                <div class="form-group">-->
+<!--                    <label for="inviter_name">Inviter’s name&nbsp;/&nbsp;邀请者姓名</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="inviter_name"-->
+<!--                            name="inviter_name"-->
+<!--                            placeholder="邀请者姓名"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="inviter_relationship">Inviter’s relationship to you&nbsp;/&nbsp;邀请者与您的关系</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="inviter_relationship"-->
+<!--                            name="inviter_relationship"-->
+<!--                            placeholder="邀请者与您的关系"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="inviter_id">Inviter’s ID number&nbsp;/&nbsp;邀请者ID号</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="inviter_id"-->
+<!--                            name="inviter_id"-->
+<!--                            placeholder="邀请者ID号"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="inviter_dial">Inviter’s phone number&nbsp;/&nbsp;邀请者电话</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="inviter_dial"-->
+<!--                            name="inviter_dial"-->
+<!--                            placeholder="邀请者电话"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="inviter_addr">Inviter’s address in china&nbsp;/&nbsp;邀请者在中国住址</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="inviter_addr"-->
+<!--                            name="inviter_addr"-->
+<!--                            placeholder="邀请者在中国住址"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+            </form>
+<!--           <p></p>-->
+<!--            <form method="post" class="survey-form">-->
+<!--                <h2>Working Info</h2>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="employ">Employed or self employed&nbsp;/&nbsp;受雇或个体经营</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="employ"-->
+<!--                            name="employ"-->
+<!--                            placeholder="受雇或个体经营"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="income">Annual income&nbsp;/&nbsp;年收入</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="income"-->
+<!--                            name="income"-->
+<!--                            placeholder="年收入"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--            </form>-->
+<!--            <p></p>-->
+<!--            <form method="post" class="survey-form">-->
+<!--                <h2>Working experience 1</h2>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="date1">Date of begin and end employment&nbsp;/&nbsp;开始以及结束日期</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="date1"-->
+<!--                            name="date1"-->
+<!--                            placeholder="开始以及结束日期"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_name1">Employer name&nbsp;/&nbsp;公司（雇主）名称</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_name1"-->
+<!--                            name="em_name1"-->
+<!--                            placeholder="公司（雇主）名称"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_addr1">Employer address&nbsp;/&nbsp;公司（雇主）地址</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_addr1"-->
+<!--                            name="em_addr1"-->
+<!--                            placeholder="公司（雇主）地址"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_dial1">Employer's phone number&nbsp;/&nbsp;公司（雇主）联系方式</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_dial1"-->
+<!--                            name="em_dial1"-->
+<!--                            placeholder="公司（雇主）联系方式"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_pos1">Position&nbsp;/&nbsp;职位</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_pos1"-->
+<!--                            name="em_pos1"-->
+<!--                            placeholder="职位"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_duty1">Duty&nbsp;/&nbsp;职责</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_duty1"-->
+<!--                            name="em_duty1"-->
+<!--                            placeholder="职责"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="sup_name1">Supervisors’ name&nbsp;/&nbsp;上级主管姓名</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="sup_name1"-->
+<!--                            name="sup_name1"-->
+<!--                            placeholder="上级主管姓名"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="sup_dial1">Supervisors’ phone number&nbsp;/&nbsp;上级主管电话</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="sup_dial1"-->
+<!--                            name="sup_dial1"-->
+<!--                            placeholder="上级主管电话"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--            </form>-->
+<!--           <p></p>-->
+<!--            <form method="post" class="survey-form">-->
+<!--                <h2>Working experience 2</h2>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="date2">Date of begin and end employment&nbsp;/&nbsp;开始以及结束日期</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="date2"-->
+<!--                            name="date2"-->
+<!--                            placeholder="开始以及结束日期"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_name2">Employer name&nbsp;/&nbsp;公司（雇主）名称</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_name2"-->
+<!--                            name="em_name2"-->
+<!--                            placeholder="公司（雇主）名称"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_addr2">Employer address&nbsp;/&nbsp;公司（雇主）地址</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_addr2"-->
+<!--                            name="em_addr2"-->
+<!--                            placeholder="公司（雇主）地址"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_dial2">Employer's phone number&nbsp;/&nbsp;公司（雇主）联系方式</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_dial2"-->
+<!--                            name="em_dial2"-->
+<!--                            placeholder="公司（雇主）联系方式"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_pos2">Position&nbsp;/&nbsp;职位</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_pos2"-->
+<!--                            name="em_pos2"-->
+<!--                            placeholder="职位"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="em_duty2">Duty&nbsp;/&nbsp;职责</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="em_duty2"-->
+<!--                            name="em_duty2"-->
+<!--                            placeholder="职责"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="sup_name2">Supervisors’ name&nbsp;/&nbsp;上级主管姓名</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="sup_name2"-->
+<!--                            name="sup_name2"-->
+<!--                            placeholder="上级主管姓名"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <label for="sup_dial2">Supervisors’ phone number&nbsp;/&nbsp;上级主管电话</label>-->
+<!--                    <input-->
+<!--                            type="text"-->
+<!--                            class="form-control"-->
+<!--                            id="sup_dial2"-->
+<!--                            name="sup_dial2"-->
+<!--                            placeholder="上级主管电话"-->
+<!--                            required-->
+<!--                    />-->
+<!--                </div>-->
+<!--            </form>-->
+<!--            <p></p>-->
+            <form>
+                <div style="text-align: center">
+<!--                    <button class="formbtn" type="button" onclick="postUp()">-->
+<!--                        暂存&nbsp;/&nbsp;Save-->
+<!--                    </button>-->
+<!--                    &nbsp;&nbsp;&nbsp;&nbsp;-->
+                    <div class="ans">你的答案？</div>
+                    <label for="answ"></label>
+                    <input type="text" class="answ" id="answ" name="answ">
+                    <br>
+                    <br>
+                    <button class="formbtn" type="button" onclick="postUp()">
+                        提交
+                    </button>
+                </div>
+            </form>
+<!--            <p></p>-->
+<!--            <div id="code">-->
+<!--                <div style="text-align: left">-->
+<!--                    <p class="user_code"><button class="copyclip" onclick="copy()" id="clip">点击复制</button>&nbsp;&nbsp;您的编码&nbsp;/&nbsp;Your code:&nbsp;&nbsp;<span id="gen_code">0</span></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="container-box" align="center">-->
+<!--                <i class="fas fa-bolt"></i>-->
+<!--                <h2>Speeds up development</h2>-->
+<!--                <p align="left">We did most of the heavy lifting for you to provide a default styling that incorporate our custom components.-->
+<!--                    Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>-->
+
+<!--            </div>-->
+<!--            <div class="container-box" align="center">-->
+<!--                <i class="fas fa-user-friends"></i>-->
+<!--                <h2>User Experience Focused</h2>-->
+<!--                <p align="left">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates-->
+<!--                    components and animations that provide more feedback to users. Additionally, a single underlying responsive-->
+<!--                    system across all platforms allow for a more unified user experience.</p>-->
+
+<!--            </div>-->
+<!--            <div class="container-box" align="center">-->
+<!--                <i class="fas fa-cog"></i>-->
+<!--                <h2>Easy to work with</h2>-->
+<!--                <p align="left">We have provided detailed documentation as well as specific code examples to help new users get started.-->
+<!--                    We are also always open to feedback and can answer any questions a user may have about Materialize.</p>-->
+<!--            </div>-->
+            <div style="text-align: center">
+                (露个小尾巴~)
+            </div>
+        </div>
+        <div id="time">
+        </div>
+        <h1 id="timeHeading">Story of Our Life.</h1>
+        <div class="out-container">
+            <section id="cd-timeline" class="cd-container">
+
+            </section> <!-- cd-timeline -->
+        </div>
+
+
+
+        <!-- Section with Company Bio and Settings & Contact Links -->
+        <div class="newContainer">
+            <div class="bottomSection">
+                <div class="container2-box1" align="left">
+                    <h2>Rusty Lake in CSU</h2>
+                    <p>祝你生日快乐，祝你每天都快乐。</p>
+                </div>
+                <div class="container2-box2" align="left">
+                    <h2>Contact</h2>
+                    <p>电话: 520</p>
+                    <p>邮箱: 我@你</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</body>
+
+</html>
