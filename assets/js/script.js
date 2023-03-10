@@ -73,14 +73,27 @@ function show(){
                 }
 
                 var section = $('#cd-timeline')
-                section.append('<div class="cd-timeline-block">'
-                    + circle
-                    + '<div class="cd-timeline-content">'
-                    + '<h2>' + data.title + '</h2>'
-                    // + '<p>' + data.text + '</p>'
-                    + img
-                    + '<span class="cd-date">' + data.date + '</span>'
-                    + '</div>' + '</div>')
+                if(data.text != null){
+                    section.append('<div class="cd-timeline-block">'
+                        + circle
+                        + '<div class="cd-timeline-content">'
+                        + '<h2>' + data.title + '</h2>'
+                        + '<p>' + data.text + '</p>'
+                        + img
+                        + '<span class="cd-date">' + data.date + '</span>'
+                        + '</div>' + '</div>')
+                }
+                else{
+                    section.append('<div class="cd-timeline-block">'
+                        + circle
+                        + '<div class="cd-timeline-content">'
+                        + '<h2>' + data.title + '</h2>'
+                        // + '<p>' + data.text + '</p>'
+                        + img
+                        + '<span class="cd-date">' + data.date + '</span>'
+                        + '</div>' + '</div>')
+                }
+
             })
         })
     }
