@@ -69,7 +69,7 @@ function show(){
                 }
                 var img = ''
                 if (data.img != null) {
-                    img = '<img src="img/' + data.img + '">'
+                    img = '<img src="' + data.img + '">'
                 }
 
                 var section = $('#cd-timeline')
